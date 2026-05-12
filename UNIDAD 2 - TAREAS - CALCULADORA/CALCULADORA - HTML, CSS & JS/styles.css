@@ -1,0 +1,30 @@
+/* Reset y base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: linear-gradient(135deg, #667eea, #764ba2); font-family: Arial; }
+
+/* Contenedor principal */
+.calc { background: white; border-radius: 15px; padding: 20px; box-shadow: 0 10px 40px rgba(0,0,0,.3); width: 300px; }
+h1 { text-align: center; color: #333; margin-bottom: 20px; }
+
+/* Pantalla */
+input { width: 100%; padding: 15px; font-size: 24px; border: 2px solid #667eea; border-radius: 8px; margin-bottom: 15px; text-align: right; }
+
+/* Grid de botones */
+#botones { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+
+/* Botones base */
+button { padding: 15px; font-size: 18px; border: none; border-radius: 8px; background: #667eea; color: white; font-weight: bold; cursor: pointer; transition: all .2s; }
+button:hover { background: #3f4149; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(102,126,234,.4); }
+
+/* Botones funcionales */
+button.fn { background: #764ba2; }
+button.fn:hover { background: #643a82; }
+
+/* Botón limpiar */
+button.limpiar { background: #ff6b6b; }
+button.limpiar:hover { background: #ff5252; }
+
+/* Botones especiales */
+button.igual { background: #51cf66; grid-column: span 2; }
+button.igual:hover { background: #40c057; }
+button.cero { grid-column: span 2; }
